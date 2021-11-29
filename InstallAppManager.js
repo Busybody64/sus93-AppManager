@@ -1,3 +1,4 @@
 (async function() {
-fetch("https://perodactyl.github.io/w93appMan/install.js").then((r)=>{r.text().then((t)=>{eval(t)})})
+	var f = await (await fetch("https://perodactyl.github.io/w93appMan/install.js")).text() //Get file.
+	eval(f) //Run it.
 })
